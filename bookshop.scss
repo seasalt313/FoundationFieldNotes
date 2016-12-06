@@ -1,0 +1,13 @@
+.book_shop {
+  @include grid-row();
+    border: none;
+    .book {
+      @include grid-column(3);
+      label {
+        font-weight: bold;
+      }
+      .price {
+        color: maroon;
+      }
+    }
+}

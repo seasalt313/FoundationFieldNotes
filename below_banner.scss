@@ -1,0 +1,33 @@
+body {
+.below {
+  @include grid-row();
+    color: white;
+
+    .lunacy {
+      @include grid-column(8);
+      background-image: url("images/smmoon.jpg");
+      padding: 100px 0;
+    }
+    .events {
+    @include grid-column(4);
+    background-image: url("images/smpink.jpg");
+    padding: 100px 0;
+
+    }
+    button {
+      border: 1px solid white;
+      padding: 16px 28px;
+
+    }
+
+}
+
+.merchandise {
+  @include grid-row();
+  h4 {
+    color: $gold;
+    height: 79px;
+
+  }
+}
+}

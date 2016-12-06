@@ -1,0 +1,43 @@
+body {
+  footer {
+    @include grid-row();
+    padding: 100px 40px;
+    background-image: url("images/lggold.jpg");
+    .top_footer {
+      @include grid-row();
+      .top {
+        @include grid-column(4);
+      }
+    }
+    .nav_footer {
+      @include grid-row();
+      .first {
+        @include grid-column(2);
+        list-style: none;
+      }
+      .second {
+        @include grid-column(2);
+      }
+      .third {
+        @include grid-column(4);
+      }
+      .email {
+        @include grid-column(4);
+      }
+      ul {
+        list-style: none;
+      }
+    }
+    .nav_icons {
+      font-size: 15px;
+    }
+    .details {
+      @include grid-row();
+      font-size: 11px;
+      border-top: 1px solid black;
+      p {
+        @include grid-column(4);
+      }
+    }
+  }
+}

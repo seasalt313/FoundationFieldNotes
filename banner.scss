@@ -1,0 +1,45 @@
+body {
+  .top_banner {
+    @include grid-row();
+    border: $border;
+    border-top: 3px solid $gold;
+    .logo {
+       p,  h1 {
+        @include grid-column(3);
+      }
+      a {
+        color: maroon;
+        font-weight: bold;
+        font-size: 18px;
+        text-decoration: none;
+      }
+    }
+    .nav {
+      @include grid-row();
+      border: $border;
+      ul {
+        @include grid-column(8);
+        li {
+          @include grid-column(2);
+          list-style: none;
+        }
+      }
+    }
+  }
+
+  .banner {
+    @include grid-row();
+    border: $border;
+    background-image: url("images/smwater.jpg");
+    color: white;
+    font-weight: bold;
+    height: 523px;
+    button {
+      border: 2px solid white;
+      padding: 16px 28px;
+    }
+    .text {
+      padding: 100px 0;
+    }
+  }
+}
