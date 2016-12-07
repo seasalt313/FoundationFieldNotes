@@ -3,26 +3,41 @@ body {
   @include grid-row();
     color: white;
 
+    // max-width: 100%;
+
     .lunacy {
       @include grid-column(12);
       background-image: url("images/smmoon.jpg");
       padding: 100px 0;
+      height: 440px;
           @include breakpoint(850px) {
           @include grid-column(8);
+          }
+          h4{
+            font-size: 1.5em;
+            margin: 0;
           }
     }
     .events {
     @include grid-column(12);
     background-image: url("images/smpink.jpg");
     padding: 100px 0;
+    height: 440px;
       @include breakpoint(850px) {
       @include grid-column(4);
+      }
+      h4{
+        font-size: 1.5em;
+        margin: 0;
+      }
+      p {
+        font-size: 1.2em;
       }
     }
     button {
       border: 1px solid white;
       padding: 16px 28px;
-
+      text-transform: uppercase;
     }
 
 }

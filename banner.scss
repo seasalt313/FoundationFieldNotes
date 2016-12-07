@@ -4,11 +4,13 @@ body {
     border: $border;
     border-top: 3px solid $gold;
     .logo {
-       p,  h1 {
+
+       p, h1 {
         @include grid-column(12);
           @include breakpoint(850px) {
           @include grid-column(4);
           }
+
       }
       a {
         color: maroon;
@@ -37,18 +39,34 @@ body {
   }
 
   .banner {
+    max-width: 100%;
     @include grid-row();
     border: $border;
     background-image: url("images/smwater.jpg");
+    background: cover;
     color: white;
     font-weight: bold;
     height: 523px;
     button {
       border: 2px solid white;
       padding: 16px 28px;
+      margin-top: 50px;
+      text-transform: uppercase;
     }
     .text {
       padding: 100px 0;
+      h1 {
+        font-size: 4.6rem;
+        margin: 0;
+      }
+      h5 {
+        font-size: 1.5rem;
+        margin: 0;
+      }
+      h6 {
+        font-size: 2.2rem;
+        margin: 0;
+      }
     }
   }
 }

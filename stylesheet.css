@@ -322,11 +322,13 @@ body .top_banner {
             body .top_banner .nav ul li:last-child:not(:first-child) {
               float: right; } }
 body .banner {
+  max-width: 100%;
   max-width: 75rem;
   margin-left: auto;
   margin-right: auto;
   border: 1px dotted grey;
   background-image: url("images/smwater.jpg");
+  background: cover;
   color: white;
   font-weight: bold;
   height: 523px; }
@@ -337,9 +339,20 @@ body .banner {
     clear: both; }
   body .banner button {
     border: 2px solid white;
-    padding: 16px 28px; }
+    padding: 16px 28px;
+    margin-top: 50px;
+    text-transform: uppercase; }
   body .banner .text {
     padding: 100px 0; }
+    body .banner .text h1 {
+      font-size: 4.6rem;
+      margin: 0; }
+    body .banner .text h5 {
+      font-size: 1.5rem;
+      margin: 0; }
+    body .banner .text h6 {
+      font-size: 2.2rem;
+      margin: 0; }
 
 body .below {
   max-width: 75rem;
@@ -357,7 +370,8 @@ body .below {
     padding-left: 0.625rem;
     padding-right: 0.625rem;
     background-image: url("images/smmoon.jpg");
-    padding: 100px 0; }
+    padding: 100px 0;
+    height: 440px; }
     @media screen and (min-width: 40em) {
       body .below .lunacy {
         padding-left: 0.9375rem;
@@ -377,13 +391,17 @@ body .below {
     @media screen and (min-width: 53.125em) {
         body .below .lunacy:last-child:not(:first-child) {
           float: right; } }
+    body .below .lunacy h4 {
+      font-size: 1.5em;
+      margin: 0; }
   body .below .events {
     width: 100%;
     float: left;
     padding-left: 0.625rem;
     padding-right: 0.625rem;
     background-image: url("images/smpink.jpg");
-    padding: 100px 0; }
+    padding: 100px 0;
+    height: 440px; }
     @media screen and (min-width: 40em) {
       body .below .events {
         padding-left: 0.9375rem;
@@ -403,9 +421,15 @@ body .below {
     @media screen and (min-width: 53.125em) {
         body .below .events:last-child:not(:first-child) {
           float: right; } }
+    body .below .events h4 {
+      font-size: 1.5em;
+      margin: 0; }
+    body .below .events p {
+      font-size: 1.2em; }
   body .below button {
     border: 1px solid white;
-    padding: 16px 28px; }
+    padding: 16px 28px;
+    text-transform: uppercase; }
 body .merchandise {
   max-width: 75rem;
   margin-left: auto;
