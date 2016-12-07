@@ -5,7 +5,10 @@ body {
     border-top: 3px solid $gold;
     .logo {
        p,  h1 {
-        @include grid-column(3);
+        @include grid-column(12);
+          @include breakpoint(850px) {
+          @include grid-column(4);
+          }
       }
       a {
         color: maroon;
@@ -18,10 +21,16 @@ body {
       @include grid-row();
       border: $border;
       ul {
-        @include grid-column(8);
+        @include grid-column(12);
+          @include breakpoint(850px) {
+          @include grid-column(12);
+          }
         li {
-          @include grid-column(2);
+          @include grid-column(12);
           list-style: none;
+            @include breakpoint(850px) {
+            @include grid-column(3);
+            }
         }
       }
     }

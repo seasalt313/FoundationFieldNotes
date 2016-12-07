@@ -2,12 +2,16 @@
   @include grid-row();
     border: none;
     .book {
-      @include grid-column(3);
-      label {
-        font-weight: bold;
-      }
-      .price {
-        color: maroon;
-      }
+      @include grid-column(6);
+        @include breakpoint(850px) {
+        @include grid-column(3);
+        }
+        
+          label {
+            font-weight: bold;
+          }
+          .price {
+            color: maroon;
+          }
     }
 }
